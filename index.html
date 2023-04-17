@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="nike jordan sb retro jordan1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
@@ -12,21 +13,22 @@
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Ice Club-Inicio</title>
+  <title>ICE CLUB-Inicio</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="./assets/img/favicon-32x32.png">
 </head>
 
 <body>
-  <header>
+  <header id="arriba">
     <nav>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
         <i class="fa-solid fa-bars"></i>
       </label>
       <a href="#" class="enlace">
-        <img src="./assets/img/logooficaoiceclub.jpg" alt="logo-iceclub" class="logo">
+        <img src="./assets/img/logooficaoiceclub.jpg" alt="logo-iceclub" class="logo" data-aos="zoom-out-right">
       </a>
-      <ul>
+      <ul data-aos="zoom-out-left">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="./pages/ofertas.html">Ofertas</a></li>
         <li><a href="./pages/galeria.html">Galeria</a></li>
@@ -34,121 +36,151 @@
         <li><a href="./pages/contactos.html">Contactos</a></li>
       </ul>
     </nav>
-    <div class="search">
-        <input type="text" class="searchTerm" placeholder="Buscar">
-        <button type="submit" class="searchButton">
-          <i class="fa fa-search"></i>
-       </button>
-     </div>
+    <div class="searchNav">
+      <div class="container-1">
+          <span class="icon"><i class="fa fa-search"></i></span>
+          <input type="text" id="search" placeholder="Buscar" />
+      </div>
+      <div class="container-2">
+        <button class="botonUno">ingresar</button>
+        <button class="botonDos"><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+    </div>
   </header>
   <main>
-    <h2>ELIGE, PAGA Y RECIBE TU PEDIDO SIN MOVERTE DE TU CASA</h2>
-    <p>- ENVÍOS A TODO EL PAÍS -</p>
+    <strong><h1>ELIGE, PAGA Y RECIBE TU PEDIDO SIN MOVERTE DE TU CASA</h1></strong>
+    <div class="truck">
+      <i class="fa-solid fa-truck-fast"></i>
+      <strong><h3>- ENVÍOS A TODO EL PAÍS -</h3></strong>
+      <i class="fa-solid fa-truck-fast"></i>
+    </div>
     <div class="sneakers">
+      <a href="https://wa.me/3757516788?text=Me%20gustaría%20saber%20el%20precio%20del%20Sneakers" class="whatsapp" data-aos="zoom-out-left" target="_blank"> <i class="fa-brands fa-whatsapp"></i></a>
       <div>
-        <img src="./assets/img/zapa1.jpg" alt="foto-sneakers"> <br>
-        <p>JORDAN RETRO 1</p> <br>
+        <img src="./assets/img/zapa1.jpg" alt="Nike jordan roja y blanca"> <br>
+        <h3>JORDAN RETRO1</h3> <br>
         <p>$45.000</p> <br>
+        <h6>3 cuotas sin interés <br> de $15.000</h6> <br>
         <button type="submit" name="comprar" id="enviar">AGREGAR AL CARRITO</button>
       </div>
       <div>
-        <img src="./assets/img/zapa10.jpg" alt="foto-sneakers"> <br>
-        <p>NIKE AIR MAX 97</p> <br>
+        <img src="./assets/img/zapa10.jpg" alt="Nike air max roja y blanca"> <br>
+        <h3>AIR MAX 97</h3> <br>
         <p>$40.000</p> <br>
+        <h6>3 cuotas sin interés <br> de $13.000</h6> <br>
         <button type="submit" name="comprar" id="enviar">AGREGAR AL CARRITO</button>
       </div>
       <div>
-        <img src="./assets/img/zapa14.jpg" alt="foto-sneakers"> <br>
-        <p>NIKE SB GRATEFUL</p> <br>
+        <img src="./assets/img/zapa14.jpg" alt="Nike SB amarilla y azul"> <br>
+        <h3>NIKE GRATEFUL</h3> <br>
         <p>$52.000</p> <br>
+        <h6>3 cuotas sin interés <br> de $17.333</h6> <br>
         <button type="submit" name="comprar" id="enviar">AGREGAR AL CARRITO</button>
       </div>
       <div>
-        <img src="./assets/img/zapa2.jpg" alt="foto-sneakers"> <br>
-        <p>ADIDAS YEEZY</p> <br>
+        <img src="./assets/img/zapa2.jpg" alt="Adidas Yeezy blanca"> <br>
+        <h3>ADIDAS YEEZY</h3> <br>
         <p>$65.000</p> <br>
+        <h6>3 cuotas sin interés <br> de $21.666</h6> <br>
         <button type="submit" name="comprar" id="enviar">AGREGAR AL CARRITO</button>
       </div>
       <div>
-        <img src="./assets/img/zapa3.jpg" alt="foto-sneakers"> <br>
-        <p>AIR JORDAN 1 RETRO</p> <br>
+        <img src="./assets/img/zapa3.jpg" alt="Nike jordan negra y blanca"> <br>
+        <h3>JORDAN RETRO1</h3> <br>
         <p>$49.000</p> <br>
+        <h6>3 cuotas sin interés <br> de $16.333</h6> <br>
         <button type="submit" name="comprar" id="enviar">AGREGAR AL CARRITO</button>
       </div>
       <div>
-        <img src="./assets/img/zapa4.jpg" alt="foto-sneakers"> <br>
-        <p>ADIDAS YEEZY 350</p> <br>
+        <img src="./assets/img/zapa4.jpg" alt="Adidas Yeezy rosa"> <br>
+        <h3>YEEZY 350</h3> <br>
         <p>$57.000</p> <br>
+        <h6>3 cuotas sin interés <br> de $19.000</h6> <br>
         <button type="submit" name="comprar" id="enviar">AGREGAR AL CARRITO</button>
       </div>
       <div>
-        <img src="./assets/img/zapa32.jpg" alt="foto-sneakers"> <br>
-        <p>DOUN LOW BLACK</p> <br>
+        <img src="./assets/img/zapa32.jpg" alt="Doun low negra"> <br>
+        <h3>DOUN LOW BLACK</h3> <br>
         <p>$65.000</p> <br>
+        <h6>3 cuotas sin interés <br> de $21.666</h6> <br>
         <button type="submit" name="comprar" id="enviar">AGREGAR AL CARRITO</button>
       </div>
       <div>
-        <img src="./assets/img/jordan.jpg" alt="foto-sneakers"> <br>
-        <p>JORDAN RETRO "VOLT"</p> <br>
+        <img src="./assets/img/jordan.jpg" alt=" Nike Jordan blanca, negro y naranja "> <br>
+        <h3>JORDAN "VOLT"</h3> <br>
         <p>$42.000</p> <br>
+        <h6>3 cuotas sin interés <br> de $14.000</h6> <br>
         <button type="submit" name="comprar" id="enviar">AGREGAR AL CARRITO</button>
       </div>
       <div>
-        <img src="./assets/img/zapa7.jpg" alt="foto-sneakers"> <br>
-        <p>NIKE DUNK</p> <br>
+        <img src="./assets/img/zapa7.jpg" alt="Nike Dunk marron"> <br>
+        <h3>NIKE DUNK</h3> <br>
         <p>$53.000</p> <br>
+        <h6>3 cuotas sin interés <br> de $17.666</h6> <br>
         <button type="submit" name="comprar" id="enviar">AGREGAR AL CARRITO</button>
       </div>
       <div>
-        <img src="./assets/img/zapa9.jpg" alt="foto-sneakers"> <br>
-        <p>JORDAN 1 BLU</p> <br>
+        <img src="./assets/img/zapa9.jpg" alt="Nike Jordan azul y blanco"> <br>
+        <h3>JORDAN 1 BLU</h3> <br>
         <p>$43.000</p> <br>
+        <h6>3 cuotas sin interés <br> de $14.333</h6> <br>
         <button type="submit" name="comprar" id="enviar">AGREGAR AL CARRITO</button>
       </div>
       <div>
-        <img src="./assets/img/zapa23.jpg" alt="foto-sneakers"> <br>
-        <p>NIKE AIR FORCE 1</p> <br>
+        <img src="./assets/img/zapa23.jpg" alt="Nike air force floreada"> <br>
+        <h3>NIKE AIR FORCE</h3> <br>
         <p>$49.000</p> <br>
+        <h6>3 cuotas sin interés <br> de $16.333</h6> <br>
         <button type="submit" name="comprar" id="enviar">AGREGAR AL CARRITO</button>
       </div>
       <div>
-        <img src="./assets/img/zapa22.jpg" alt="foto-sneakers"> <br>
-        <p>AIR JORDAN RETRO 6</p> <br>
+        <img src="./assets/img/zapa22.jpg" alt="Air jordan retro 6 negro"> <br>
+        <h3>JORDAN RETRO 6</h3> <br>
         <p>$45.000</p> <br>
+        <h6>3 cuotas sin interés <br> de $15.000</h6> <br>
         <button type="submit" name="comprar" id="enviar">AGREGAR AL CARRITO</button>
       </div>
       <div>
-        <img src="./assets/img/nike azul.webp" alt="foto-sneakers"> <br>
-        <p>NIKE SB DIAMONT</p> <br>
+        <img src="./assets/img/nike azul.webp" alt="Nike SB celeste y negro"> <br>
+        <h3>NIKE DIAMONT</h3> <br>
         <p>$53.000</p> <br>
+        <h6>3 cuotas sin interés <br> de $17.666</h6> <br>
         <button type="submit" name="comprar" id="enviar">AGREGAR AL CARRITO</button>
       </div>
       <div>
-        <img src="./assets/img/nike marron.webp" alt="foto-sneakers"> <br>
-        <p>NIKE AIR UPTEMPO</p> <br>
+        <img src="./assets/img/nike marron.webp" alt="Nike uptempo marron"> <br>
+        <h3>NIKE UPTEMPO</h3> <br>
         <p>$43.000</p> <br>
+        <h6>3 cuotas sin interés <br> de $14.333</h6> <br>
         <button type="submit" name="comprar" id="enviar">AGREGAR AL CARRITO</button>
       </div>
       <div>
-        <img src="./assets/img/nike verde.jpg" alt="foto-sneakers"> <br>
-        <p>NIKE DUNK PHANTON</p> <br>
+        <img src="./assets/img/nike verde.jpg" alt="Nike phanton verde agua y blanco"> <br>
+        <h3>NIKE PHANTON</h3> <br>
         <p>$59.000</p> <br>
+        <h6>3 cuotas sin interés <br> de $19.666</h6> <br>
         <button type="submit" name="comprar" id="enviar">AGREGAR AL CARRITO</button>
       </div>
       <div>
-        <img src="./assets/img/nike rojanegra.webp" alt="foto-sneakers"> <br>
-        <p>NIKE HIGH 1985</p> <br>
+        <img src="./assets/img/nike rojanegra.webp" alt="Nike 1985 roja y negro"> <br>
+        <h3>NIKE HIGH 1985</h3> <br>
         <p>$60.000</p> <br>
+        <h6>3 cuotas sin interés <br> de $20.000</h6> <br>
         <button type="submit" name="comprar" id="enviar">AGREGAR AL CARRITO</button>
       </div>
+    </div>
+    <div class="mas">
+      <button>Mostrar mas productos</button>
     </div>
   </main>
   <footer class="pie-pagina">
     <div class="grupoUno">
       <div class="box">
         <figure>
-          <a href="">
-            <img src="./assets/img/logooficaoiceclub.jpg" alt="logo ICE-CLUB">
+          <a href="#" id="arriba">
+            <img src="./assets/img/logooficaoiceclub.jpg" alt="logo ICE-CLUB" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
           </a>
         </figure>
       </div>
@@ -180,6 +212,10 @@
       <small>Copyright &copy; 2022 Ice club</small>
     </div>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>  
 </body>
 
 </html>

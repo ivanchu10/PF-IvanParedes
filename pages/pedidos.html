@@ -10,20 +10,21 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../assets/css/style.css">
   <title>Pedidos</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="../assets/img/favicon-32x32.png">
 </head>
 
 <body>
-  <header>
+  <header id="arriba">
     <nav>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
         <i class="fa-solid fa-bars"></i>
       </label>
-      <a href="#" class="enlace">
-        <img src="../assets/img/logooficaoiceclub.jpg" alt="logo-iceclub" class="logo">
+      <a href="../index.html" class="enlace">
+        <img src="../assets/img/logooficaoiceclub.jpg" alt="logo-iceclub" class="logo" data-aos="zoom-out-right">
       </a>
-      <ul>
+      <ul data-aos="zoom-out-left">
         <li><a href="../index.html">Inicio</a></li>
         <li><a href="./ofertas.html">Ofertas</a></li>
         <li><a href="./galeria.html">Galeria</a></li>
@@ -31,52 +32,54 @@
         <li><a href="./contactos.html">Contactos</a></li>
       </ul>
     </nav>
-    <div class="search">
-        <input type="text" class="searchTerm" placeholder="Buscar">
-        <button type="submit" class="searchButton">
-          <i class="fa fa-search"></i>
-       </button>
-     </div>
-    </nav>
+    <div class="searchNav">
+      <div class="container-1">
+          <span class="icon"><i class="fa fa-search"></i></span>
+          <input type="text" id="search" placeholder="Buscar" />
+      </div>
+      <div class="container-2">
+        <button class="botonUno">ingresar</button>
+        <button class="botonDos"><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+    </div>
   </header>
   <main>
     <div class="pedidos">
-      <h2>PEDIDOS</h2>
-      <h3>COMPRAR EN NUESTRA TIENDA ONLINE ES FACIL Y COMODO</h3>
-      <h3>DISPONIBILIDAD DE LOS PRODUCTOS</h3>
-      <P>Todos los productos publicados en nuestra tienda online que tienen tallas disponibles,<br> están en
+      <strong><h2 class="text">PEDIDOS</h2></strong>
+      <h3 class="text">DISPONIBILIDAD DE LOS PRODUCTOS</h3>
+      <P class="text"> Todos los productos publicados en nuestra tienda online que tienen tallas disponibles, <br> están en
         stock, y listos para ser enviados. Cuando no podamos enviar algún artículo <br> de tu pedido, te
-        devolveremos el total del producto no despachado. Nuestro objetivo es <br> mantener nuestros niveles de
-        stock tan precisos como sea posible. Te sugerimos consultar <br> con frecuencia nuestro sitio, ya que se
-        actualiza periódicamente con nuevos productos.</P>
-      <h3>CANCELACIONES</h3>
-      <p>Si realizaste un pedido por equivocación, envíanos un correo electrónico a: Ice-club@aswgr.com. <br> Es
-        importante que te contactes con nosotros a la brevedad. Nos esforzamos siempre para <br> despachar los
-        pedidos lo más rápido posible, lo que significa que también disponemos de poco <br> tiempo para cancelar
+        devolveremos el total del producto no despachado. <br> Nuestro objetivo es mantener nuestros niveles de
+        stock tan precisos como sea posible. <br> Te sugerimos consultar con frecuencia nuestro sitio, ya que se
+        actualiza <br> periódicamente con nuevos productos.</P>
+      <h3 class="text">CANCELACIONES</h3>
+      <p class="text"> Si realizaste un pedido por equivocación, envíanos un correo electrónico a: Ice-club@aswgr.com. <br> Es
+        importante que te contactes con nosotros a la brevedad. Nos esforzamos siempre <br> para despachar los
+        pedidos lo más rápido posible, lo que significa que <br> también disponemos de poco tiempo para cancelar
         tu pedido.</p>
-      <h2>ENVÍOS</h2>
-      <h3>Envío Prioritario</h3>
-      <p>Podrás comprar de lunes a viernes y recibirás tus productos hasta en 48 horas hábiles. <br>Tene en
+      <strong><h2 class="text">ENVÍOS</h2></strong>
+      <h3 class="text">Envío Prioritario</h3>
+      <p class="text"> Podrás comprar de lunes a viernes y recibirás tus productos hasta en 48 horas hábiles. <br>Tene en
         cuenta, que si realizaste el pedido durante el fin de semana o día feriado,<br> se procesará desde el
         día hábil siguiente</p>
-      <h3>Envío Normal</h3>
-      <p>Los envíos se procesan en nuestro depósito en un plazo de 2 días hábiles, si realizaste tu pedido <br> un
-        fin de semana o un feriado, será procesado el siguiente día hábil. El tiempo <br> de despacho y entrega
-        del pedido, dependerá de tu localidad, esto puede demorar hasta 3 hábiles <br> si residís en CABA y GBA,
+      <h3 class="text">Envío Normal</h3>
+      <p class="text"> Los envíos se procesan en nuestro depósito en un plazo de 2 días hábiles, si realizaste <br> tu pedido un
+        fin de semana o un feriado, será procesado el siguiente día hábil. <br> El tiempo de despacho y entrega
+        del pedido, dependerá de tu localidad, esto puede demorar <br> hasta 3 hábiles si residís en CABA y GBA,
         y entre 5 y 7 días hábiles si residís en el interior del país. <br> Realizamos envíos gratis a todo el
-        país en compras superiores a $20000.</p>
-      <p>Durante eventos especiales como Hot Sale y Cyber Monday los plazos de procesamiento,<br> de envío y
+        país en compras superiores a $50000.</p>
+      <p class="text"> Durante eventos especiales como Hot Sale y Cyber Monday los plazos de procesamiento,<br> de envío y
         entrega de pedidos pueden tener una demora mayor.</p>
-      <h2>ZONAS DE ENTREGA</h2>
-      <p>Realizamos entregas en todo el país, tenemos cobertura 100% nacional.</p>
+      <strong><h2 class="text">ZONAS DE ENTREGA</h2></strong>
+      <p class="text"> Realizamos entregas en todo el país, tenemos cobertura 100% nacional.</p>
     </div>
   </main>
   <footer class="pie-pagina">
     <div class="grupoUno">
       <div class="box">
         <figure>
-          <a href="">
-            <img src="../assets/img/logooficaoiceclub.jpg" alt="logo ICE-CLUB">
+          <a href="#" id="arriba">
+            <img src="../assets/img/logooficaoiceclub.jpg" alt="logo ICE-CLUB" data-aos="flip-left">
           </a>
         </figure>
       </div>
@@ -108,6 +111,10 @@
       <small>Copyright &copy; 2022 Ice club</small>
     </div>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>  
 </body>
 
 </html>

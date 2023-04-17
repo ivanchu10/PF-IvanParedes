@@ -10,20 +10,21 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../assets/css/style.css">
   <title>Contactos</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="../assets/img/favicon-32x32.png">
 </head>
 
 <body>
-  <header>
+  <header id="arriba">
     <nav>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
         <i class="fa-solid fa-bars"></i>
       </label>
-      <a href="#" class="enlace">
-        <img src="../assets/img/logooficaoiceclub.jpg" alt="logo-iceclub" class="logo">
+      <a href="../index.html" class="enlace">
+        <img src="../assets/img/logooficaoiceclub.jpg" alt="logo-iceclub" class="logo" data-aos="zoom-out-right">
       </a>
-      <ul>
+      <ul data-aos="zoom-out-left">
         <li><a href="../index.html">Inicio</a></li>
         <li><a href="./ofertas.html">Ofertas</a></li>
         <li><a href="./galeria.html">Galeria</a></li>
@@ -31,16 +32,21 @@
         <li><a href="./contactos.html">Contactos</a></li>
       </ul>
     </nav>
-    <div class="search">
-        <input type="text" class="searchTerm" placeholder="Buscar">
-        <button type="submit" class="searchButton">
-          <i class="fa fa-search"></i>
-       </button>
-     </div>
-    </nav>
+    <div class="searchNav">
+      <div class="container-1">
+          <span class="icon"><i class="fa fa-search"></i></span>
+          <input type="text" id="search" placeholder="Buscar" />
+      </div>
+      <div class="container-2">
+        <button class="botonUno">ingresar</button>
+        <button class="botonDos"><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+    </div>
   </header>
-  <main>
-    <div class="formulario">
+  <main class="bg-form">
+    <div class="formulario" data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
       <form class="form">
         <h2>CONTÁCTENOS</h2>
         <p type="Nombre:"><input placeholder="Escribe tu nombre"></input></p>
@@ -58,8 +64,8 @@
     <div class="grupoUno">
       <div class="box">
         <figure>
-          <a href="">
-            <img src="../assets/img/logooficaoiceclub.jpg" alt="logo ICE-CLUB">
+          <a href="#" id="arriba">
+            <img src="../assets/img/logooficaoiceclub.jpg" alt="logo ICE-CLUB" data-aos="flip-left">
           </a>
         </figure>
       </div>
@@ -91,6 +97,10 @@
       <small>Copyright &copy; 2022 Ice club</small>
     </div>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>  
 </body>
 
 </html>

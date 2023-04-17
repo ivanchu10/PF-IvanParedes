@@ -10,20 +10,21 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../assets/css/style.css">
   <title>Galeria</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="icon" type="image/png" href="../assets/img/favicon-32x32.png">
 </head>
 
 <body>
-  <header>
+  <header id="arriba">
     <nav>
       <input type="checkbox" id="check">
       <label for="check" class="checkbtn">
         <i class="fa-solid fa-bars"></i>
       </label>
-      <a href="#" class="enlace">
-        <img src="../assets/img/logooficaoiceclub.jpg" alt="logo-iceclub" class="logo">
+      <a href="../index.html" class="enlace">
+        <img src="../assets/img/logooficaoiceclub.jpg" alt="logo-iceclub" class="logo" data-aos="zoom-out-right">
       </a>
-      <ul>
+      <ul data-aos="zoom-out-left">
         <li><a href="../index.html">Inicio</a></li>
         <li><a href="./ofertas.html">Ofertas</a></li>
         <li><a href="./galeria.html">Galeria</a></li>
@@ -31,40 +32,43 @@
         <li><a href="./contactos.html">Contactos</a></li>
       </ul>
     </nav>
-    <div class="search">
-        <input type="text" class="searchTerm" placeholder="Buscar">
-        <button type="submit" class="searchButton">
-          <i class="fa fa-search"></i>
-       </button>
-     </div>
-    </nav>
+    <div class="searchNav">
+      <div class="container-1">
+          <span class="icon"><i class="fa fa-search"></i></span>
+          <input type="text" id="search" placeholder="Buscar" />
+      </div>
+      <div class="container-2">
+        <button class="botonUno">ingresar</button>
+        <button class="botonDos"><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
+    </div>
   </header>
   <main>
     <div class="galeria">
-      <div class="iten iten1"></div>
-      <div class="iten iten2"></div>
-      <div class="iten iten3"></div>
-      <div class="iten iten4"></div>
-      <div class="iten iten5"></div>
-      <div class="iten iten6"></div>
-      <div class="iten iten7"></div>
-      <div class="iten iten8"></div>
-      <div class="iten iten9"></div>
-      <div class="iten iten10"></div>
-      <div class="iten iten11"></div>
-      <div class="iten iten12"></div>
-      <div class="iten iten13"></div>
-      <div class="iten iten14"></div>
-      <div class="iten iten15"></div>
-      <div class="iten iten16"></div>
+      <div class="iten iten1"  data-aos="zoom-out"></div>
+      <div class="iten iten2"  data-aos="zoom-out"></div>
+      <div class="iten iten3"  data-aos="zoom-out"></div>
+      <div class="iten iten4"  data-aos="zoom-out"></div>
+      <div class="iten iten5"  data-aos="zoom-out"></div>
+      <div class="iten iten6"  data-aos="zoom-out"></div>
+      <div class="iten iten7"  data-aos="zoom-out"></div>
+      <div class="iten iten8"  data-aos="zoom-out"></div>
+      <div class="iten iten9"  data-aos="zoom-out"></div>
+      <div class="iten iten10"  data-aos="zoom-out"></div>
+      <div class="iten iten11"  data-aos="zoom-out"></div>
+      <div class="iten iten12"  data-aos="zoom-out"></div>
+      <div class="iten iten13"  data-aos="zoom-out"></div>
+      <div class="iten iten14"  data-aos="zoom-out"></div>
+      <div class="iten iten15"  data-aos="zoom-out"></div>
+      <div class="iten iten16"  data-aos="zoom-out"></div>
     </div>
   </main>
   <footer class="pie-pagina">
     <div class="grupoUno">
       <div class="box">
         <figure>
-          <a href="">
-            <img src="../assets/img/logooficaoiceclub.jpg" alt="logo ICE-CLUB">
+          <a href="#" id="arriba">
+            <img src="../assets/img/logooficaoiceclub.jpg" alt="logo ICE-CLUB" data-aos="flip-left">
           </a>
         </figure>
       </div>
@@ -96,6 +100,10 @@
       <small>Copyright &copy; 2022 Ice club</small>
     </div>
   </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>  
 </body>
 
 </html>
